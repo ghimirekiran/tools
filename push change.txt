@@ -1,0 +1,41 @@
+If you have added new code to your project and want to upload it to GitHub, follow these steps:  
+
+### **Step 1: Open Your Project Folder in Terminal**  
+Navigate to your project folder using the terminal (Git Bash on Windows or Terminal on Mac/Linux):  
+```sh
+cd /path/to/your/project
+```
+
+### **Step 2: Check for Changes**  
+See which files have been changed, added, or deleted:  
+```sh
+git status
+```
+
+### **Step 3: Add the New Code to Git**  
+To add all changes to Git, run:  
+```sh
+git add .
+```
+If you want to add a specific file, use:  
+```sh
+git add filename.ext
+```
+
+### **Step 4: Commit the Changes**  
+Commit the changes with a message describing what you added or modified:  
+```sh
+git commit -m "Added new feature or updated code"
+```
+
+### **Step 5: Push the Changes to GitHub**  
+Upload the changes to GitHub by running:  
+```sh
+git push origin main
+```
+(Replace `main` with your branch name if you're using a different one.)
+
+### **Step 6: Verify on GitHub**  
+Go to your GitHub repository URL and check if the new code is uploaded.  
+
+That's it! 🎉 You have successfully updated your project on GitHub. 🚀
