@@ -16,33 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('notes', JSON.stringify([]));
     }
 
-    // Time and Date Display
-    const timeElement = document.getElementById('current-time');
-    const dateElement = document.getElementById('current-date');
-
-    function updateDateTime() {
-        const now = new Date();
-        
-        // Update time
-        const hours = String(now.getHours()).padStart(2, '0');
-        const minutes = String(now.getMinutes()).padStart(2, '0');
-        const seconds = String(now.getSeconds()).padStart(2, '0');
-        timeElement.textContent = `${hours}:${minutes}:${seconds}`;
-
-        // Update date
-        const options = { 
-            weekday: 'long', 
-            year: 'numeric', 
-            month: 'long', 
-            day: 'numeric' 
-        };
-        dateElement.textContent = now.toLocaleDateString('en-US', options);
-    }
-
-    // Update time immediately and then every second
-    updateDateTime();
-    setInterval(updateDateTime, 1000);
-
     // Smoking Counter Logic
     const smokingData = JSON.parse(localStorage.getItem('smokingData'));
     const todayCountElement = document.getElementById('today-count');

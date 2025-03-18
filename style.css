@@ -302,35 +302,6 @@ textarea {
     }
 }
 
-.time-display {
-    text-align: center;
-    margin-bottom: var(--spacing-lg);
-    padding: var(--spacing-md);
-    background: var(--dark-color);
-    border-radius: 8px;
-    color: var(--white);
-}
-
-.time {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: var(--spacing-sm);
-}
-
-.date {
-    font-size: 1.2rem;
-    color: var(--light-color);
-}
-
-@media (max-width: 400px) {
-    .time {
-        font-size: 2rem;
-    }
-    .date {
-        font-size: 1rem;
-    }
-}
-
 footer {
     text-align: center;
     padding: var(--spacing-lg) 0;
