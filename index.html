@@ -17,15 +17,18 @@
                     <span class="bar"></span>
                 </button>
                 <ul class="nav-links">
-                    <li><a href="#smoking-counter">Smoking Counter</a></li>
+                    <li><a href="#smoking-counter">Counter</a></li>
                     <li><a href="#task-manager">Task Manager</a></li>
                     <li><a href="#notes">Notes</a></li>
+                    <li><a href="#goals">Goals</a></li>
+                    <li><a href="#reminders">Reminders</a></li>
+                    <li><a href="#todo">Todo List</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <section id="smoking-counter" class="tool-section">
-                <h2>Smoking Counter</h2>
+                <h2>Counter</h2>
                 <div class="counter-container">
                     <div class="stats">
                         <div class="stat-item">
@@ -64,6 +67,49 @@
                     <div id="notes-list" class="notes-list"></div>
                 </div>
             </section>
+
+            <section id="goals" class="tool-section">
+                <h2>Goals</h2>
+                <div class="goals-container">
+                    <div class="goal-input">
+                        <input type="text" id="new-goal" placeholder="Enter new goal">
+                        <button id="add-goal" class="primary-btn">Add Goal</button>
+                    </div>
+                    <ul id="goal-list" class="goal-list"></ul>
+                </div>
+            </section>
+
+            <section id="reminders" class="tool-section">
+                <h2>Reminders</h2>
+                <div class="reminders-container">
+                    <div class="reminder-input">
+                        <input type="text" id="new-reminder" placeholder="Enter new reminder">
+                        <button id="add-reminder" class="primary-btn">Add Reminder</button>
+                    </div>
+                    <ul id="reminder-list" class="reminder-list"></ul>
+                </div>
+            </section>
+
+            <section id="todo" class="tool-section">
+                <h2>Todo List</h2>
+                <div class="todo-container">
+                    <div class="todo-input">
+                        <input type="text" id="new-todo" placeholder="Enter new todo">
+                        <div class="priority-selector">
+                            <label for="todo-priority">Priority:</label>
+                            <select id="todo-priority">
+                                <option value="low">Low</option>
+                                <option value="medium" selected>Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </div>
+                        <button id="add-todo" class="primary-btn">Add Todo</button>
+                    </div>
+                    
+                    <ul id="todo-list" class="todo-list"></ul>
+                </div>
+            </section>
+
         </main>
         <footer>
             <p>&copy; 2025 Personal Tools. All rights reserved. Made by Kiran Ghimire</p>
